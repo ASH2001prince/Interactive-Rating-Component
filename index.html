@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main class="container">
+      <section class="card first">
+        <div class="img-background">
+          <img class="star" src="images/icon-star.svg" alt="" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul>
+          <li class="input">1</li>
+          <li class="input">2</li>
+          <li class="input">3</li>
+          <li class="input">4</li>
+          <li class="input">5</li>
+        </ul>
+        <div class="button">
+          <button type="button" value="submit" id="btn">Submit</button>
+        </div>
+        <div class="wrong">Please put your rating first</div>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="card second">
+        <div class="second-card-image">
+          <img src="images/illustration-thank-you.svg" alt="" />
+        </div>
+
+        <div class="rating-number">
+          You selected <span class="value"></span> out of 5
+        </div>
+        <!-- Add rating here -->
+
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+
+      <!-- Thank ysou state end -->
+    </main>
+    <footer>
+      <div class="attribution">
+        <article class="footer">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >
+          Coded by <a href="#">ASH</a>
+        </article>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
